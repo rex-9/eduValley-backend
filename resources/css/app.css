@@ -1,0 +1,83 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.valley {
+    @apply flex justify-center text-2xl font-extrabold font-qs;
+}
+
+.card {
+    @apply mx-2 my-3 overflow-hidden shadow-lg rounded-cardA;
+}
+
+.card:hover {
+    @apply transition duration-500 ease-in-out shadow-2xl;
+}
+
+.btn {
+    @apply inline-block px-4 py-2 text-sm transition duration-500 ease-out transform rounded-full shadow-lg cursor-pointer;
+}
+
+.btn:focus {}
+
+.lm {
+    @apply text-white bg-primary;
+}
+
+.lm:hover {
+    @apply scale-110 shadow-inner bg-hover;
+}
+
+.lm:active {
+    @apply bg-hoverg;
+}
+
+.r {
+    @apply text-black bg-white shadow-xl;
+}
+
+.r:hover {
+    @apply bg-gray-600;
+}
+
+.leftNav {
+    @apply w-8 mt-4 ml-4 text-primary
+}
+
+.leftNavLabel {
+    @apply fixed ml-16 text-primary;
+}
+
+.botNav {
+    @apply w-8 cursor-pointer text-primary;
+}
+
+.topNav {
+    @apply cursor-pointer;
+    margin-top: 20pX;
+}
+
+.menu {
+    @apply fixed right-0;
+}
+
+.title {
+    @apply text-lg;
+}
+
+.subtitle {
+    @apply text-black;
+}
+
+.faint {
+    @apply text-sm text-faint;
+}
+
+@screen lg {
+    .eP {
+        padding: 8% 40% 10% 8%;
+    }
+}
