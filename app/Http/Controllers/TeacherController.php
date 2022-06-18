@@ -31,14 +31,14 @@ class TeacherController extends Controller
     }
 
 
-    public function searches($search)
+    public function searchByRole($role)
     {
-        $teacher = Teacher::where('role', $search)->get();
+        $teacher = Teacher::where('role', $role)->get();
 
         if (count($teacher)) {
             return response()->json($teacher);
         } else {
-            return response()->json(["search count" => count($teacher), 'result' => 'Your searching data does not match!!']);
+            return response()->json(["search count" => count($teacher), 'result' => 'Your searching role does not match!!']);
         }
     }
 

@@ -19,9 +19,9 @@ class UserController extends Controller
         return response()->json(["totalUsers" => count($users), "users" => $users]);
     }
 
-    public function search($email)
+    public function search($idOremail)
     {
-        $user = User::where("email", "like", "%" . $email . "%")->orWhere('id', $email)->get();
+        $user = User::where("email", "like", "%" . $idOremail . "%")->orWhere('id', $idOremail)->get();
 
         if (count($user)) {
             return $user;
@@ -67,7 +67,7 @@ class UserController extends Controller
         }
 
         if (!is_null($user)) {
-            $user       =       $user = User::where('email', $request->email)->first();
+            $user = User::where('email', $request->email)->first();
             $token      =       $user->createToken($request->email)->plainTextToken;
             return response()->json(["status" => "success", "login" => true, "token" => $token, "message" => "Success! registration completed", "data" => $user,]);
         } else {
@@ -88,7 +88,7 @@ class UserController extends Controller
             return response()->json(["validation_errors" => $validator->errors()]);
         }
 
-        $user           =       User::where("email", $request->email)->first();
+        $user = User::where("email", $request->email)->first();
 
         if (is_null($user)) {
             return response()->json(["status" => "failed", "message" => "Failed! email not found"]);
@@ -137,7 +137,6 @@ class UserController extends Controller
             return ['result' => 'No metta yet'];
         }
     }
-
 
     public function updateMetta(Request $request)
     {

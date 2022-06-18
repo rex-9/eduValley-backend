@@ -24,7 +24,7 @@ class AdController extends Controller
     // pluck Categories
     public function pluckCategories()
     {
-        $categories = Ad::where('name', '!=', 'null')->pluck('category');
+        $categories = Ad::where('name', '!=', 'null')->distinct()->pluck('category');
 
         if (count($categories)) {
             return response()->json($categories);

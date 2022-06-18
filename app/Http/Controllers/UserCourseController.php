@@ -40,12 +40,12 @@ class UserCourseController extends Controller
         }
     }
 
-    public function getRecords()
+    public function allRecords()
     {
         return UserCourse::all();
     }
 
-    public function user_courseRecords($user_id, $course_id)
+    public function recordsByUserCourse($user_id, $course_id)
     {
         $record = UserCourse::where('user_id', $user_id)->where('course_id', $course_id)->first();
         return $record;

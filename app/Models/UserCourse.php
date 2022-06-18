@@ -11,7 +11,7 @@ class UserCourse extends Model
 
     protected $table = "user_course";
 
-    protected $fillable = ["user_id", "course_id", "day","month", "year", "paid"];
+    protected $fillable = ["user_id", "course_id", "day", "month", "year", "paid"];
 
     public $timestamps = false;
 }

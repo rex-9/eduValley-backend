@@ -30,6 +30,17 @@ class PosterController extends Controller
         }
     }
 
+    public function delete($id)
+    {
+        $poster = Poster::where("id", $id)->first();
+        if ($poster) {
+            $poster->delete();
+            return ["deleted" => $poster];
+        } else {
+            return [$id => "This poster doesn't exist"];
+        }
+    }
+
     public function search(int $id)
     {
         $poster = Poster::where("ad_id", $id)->where('url', '!=', 'null')->get();

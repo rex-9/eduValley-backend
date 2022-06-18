@@ -28,7 +28,7 @@ class CommentController extends Controller
         if (count($comments)) {
             return response()->json($comments);
         } else {
-            return ['result' => 'No Comment yet'];
+            return 0;
         }
     }
 

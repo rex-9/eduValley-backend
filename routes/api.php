@@ -35,8 +35,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::group(['middleware' => 'auth:sanctum'], function () {
     //All secure URL's
     Route::post('logout', [UserController::class, "logout"])->name('api.logout');
-    Route::get('currentUser', [UserController::class, "current"]);
-
+    Route::get('user/current', [UserController::class, "current"]);
 });
 
 Route::post('comments/create', [CommentController::class, "create"]);
@@ -45,53 +44,53 @@ Route::post('stars/star', [StarController::class, "star"]);
 Route::delete('comments/delete/{id}', [CommentController::class, "delete"]);
 Route::delete('stars/delete/{ad_id}/{user_id}', [StarController::class, "delete"]);
 
-Route::post('apilogin', [UserController::class, "login"]);
-Route::post('apiregister', [UserController::class, "register"]);
+Route::post('login/api', [UserController::class, "login"]);
+Route::post('register/api', [UserController::class, "register"]);
 
-Route::get('getMetta', [UserController::class, "getMetta"]);
-Route::put('updateMetta', [UserController::class, "updateMetta"]);
+Route::get('metta/get', [UserController::class, "getMetta"]);
+Route::put('metta/update', [UserController::class, "updateMetta"]);
 Route::get('users/get', [UserController::class, "total"]);
-Route::get('users/search/{email}', [UserController::class, "search"]);
+Route::get('users/get/{idOremail}', [UserController::class, "search"]);
 
 
-Route::get('getTeachers', [TeacherController::class, "get"]);
-Route::get('getTeachers/{id}', [TeacherController::class, "search"]);
-Route::get('searchTeachers/{search}', [TeacherController::class, "searches"]);
+Route::get('teachers/get', [TeacherController::class, "get"]);
+Route::get('teacher/get/{id}', [TeacherController::class, "search"]);
+Route::get('teachers/get/{role}', [TeacherController::class, "searchByRole"]);
 
-Route::get('getCourses', [CourseController::class, "get"]);
-Route::get('getCourses/{search}', [CourseController::class, "search"]);
+Route::get('courses/get', [CourseController::class, "get"]);
+Route::get('courses/get/{search}', [CourseController::class, "search"]);
 
-Route::get('getVideos', [VideoController::class, "get"]);
-Route::get('getVideos/{id}', [VideoController::class, "search"]);
+Route::get('videos/get', [VideoController::class, "get"]);
+Route::get('videos/get/{id}', [VideoController::class, "search"]);
 
-Route::get('getAudio', [AudioController::class, "get"]);
-Route::get('getAudio/{id}', [AudioController::class, "search"]);
+Route::get('audio/get', [AudioController::class, "get"]);
+Route::get('audio/get/{id}', [AudioController::class, "search"]);
 // Route::get('getUrlsTitles/{id}', [AudioController::class, "searchUrlsTitles"]);
 
-Route::get('getFreevideos', [FreevideoController::class, "get"]);
-Route::get('getFreevideos/{id}', [FreevideoController::class, "search"]);
+Route::get('freevideos/get', [FreevideoController::class, "get"]);
+Route::get('freevideos/get/{id}', [FreevideoController::class, "search"]);
 
-Route::get('getBooks', [BookController::class, "get"]);
-Route::get('getBooks/{id}', [BookController::class, "search"]);
+Route::get('books/get', [BookController::class, "get"]);
+Route::get('books/get/{id}', [BookController::class, "search"]);
 
-Route::get('getGenres', [GenreController::class, "get"]);
+Route::get('genres/get', [GenreController::class, "get"]);
 
-Route::get('getAds', [AdController::class, "get"]);
-Route::get('getAds/{category}', [AdController::class, "search"]);
-Route::get('pluckCategories', [AdController::class, "pluckCategories"]);
+Route::get('ads/get', [AdController::class, "get"]);
+Route::get('ads/get/{category}', [AdController::class, "search"]);
+Route::get('ads/categories/pluck', [AdController::class, "pluckCategories"]);
 
-Route::get('getMinivideos', [MinivideoController::class, "get"]);
-Route::get('getMinivideos/{id}', [MinivideoController::class, "search"]);
+Route::get('minivideos/get', [MinivideoController::class, "get"]);
+Route::get('minivideos/get/{id}', [MinivideoController::class, "search"]);
 
-Route::get('getPosters', [PosterController::class, "get"]);
-Route::get('getPosters/{id}', [PosterController::class, "search"]);
-Route::get('getPosters/first/{id}', [PosterController::class, "searchFirst"]);
+Route::get('posters/get', [PosterController::class, "get"]);
+Route::get('posters/get/{id}', [PosterController::class, "search"]);
+Route::get('poster/first/{id}', [PosterController::class, "searchFirst"]);
 
-Route::get('getUsers/{course_id}', [UserCourseController::class, 'getUsers']);
-Route::get('getCourses/{user_id}', [UserCourseController::class, 'getCourses']);
-Route::get('pluckCourseIds/{user_id}', [UserCourseController::class, 'pluckCourseIds']);
-Route::get('getRecords', [UserCourseController::class, 'getRecords']);
-Route::get('user_courseRecords/{user_id}/{course_id}', [UserCourseController::class, 'user_courseRecords']);
+Route::get('users/{course_id}', [UserCourseController::class, 'getUsers']);
+Route::get('courses/{user_id}', [UserCourseController::class, 'getCourses']);
+Route::get('courseIds/{user_id}', [UserCourseController::class, 'pluckCourseIds']);
+Route::get('records/get', [UserCourseController::class, 'allRecords']);
+Route::get('user_course/records/{user_id}/{course_id}', [UserCourseController::class, 'recordsByUserCourse']);
 
 Route::get('comments/get', [CommentController::class, "get"]);
 Route::get('stars/get', [StarController::class, "get"]);
@@ -104,34 +103,35 @@ Route::get('stars/get/{user_id}/{ad_id}', [StarController::class, "getbyUserAndA
 Route::get('stars/userStarredAds/{user_id}', [StarController::class, 'userStarredAds']);
 Route::get('comments/userCommentedAds/{user_id}', [CommentController::class, 'userCommentedAds']);
 
-Route::get('pluckGenres', [GenreController::class, "pluck"]);
+Route::get('genres/pluck', [GenreController::class, "pluck"]);
 
-Route::post('newTeacher', [TeacherController::class, "create"]);
-Route::post('newCourse', [CourseController::class, "create"]);
-Route::post('newVideo', [VideoController::class, "create"]);
-Route::post('newAudio', [AudioController::class, "create"]);
-Route::post('newFreevideo', [FreevideoController::class, "create"]);
-Route::post('newBook', [BookController::class, "create"]);
-Route::post('newGenre', [GenreController::class, "create"]);
-Route::post('newAd', [AdController::class, "create"]);
-Route::post('newMinivideo', [MinivideoController::class, "create"]);
-Route::post('newPoster', [PosterController::class, "create"]);
+Route::post('teacher/create', [TeacherController::class, "create"]);
+Route::post('course/create', [CourseController::class, "create"]);
+Route::post('video/create', [VideoController::class, "create"]);
+Route::post('audio/create', [AudioController::class, "create"]);
+Route::post('freevideo/create', [FreevideoController::class, "create"]);
+Route::post('book/create', [BookController::class, "create"]);
+Route::post('genre/create', [GenreController::class, "create"]);
+Route::post('ad/create', [AdController::class, "create"]);
+Route::post('minivideo/create', [MinivideoController::class, "create"]);
+Route::post('poster/create', [PosterController::class, "create"]);
 
 Route::post('allAccess', [UserCourseController::class, 'allAccess']);
 Route::post('attach/{user_id}/{course_id}', [UserCourseController::class, 'attach']);
 Route::post('detach/{user_id}/{course_id}', [UserCourseController::class, 'detach']);
 
 
-Route::put('updateTeacher', [TeacherController::class, "update"]);
-Route::put('updateCourse', [CourseController::class, "update"]);
-Route::put('updateVideo', [VideoController::class, "update"]);
-Route::put('updateAudio', [AudioController::class, "update"]);
-Route::put('updateFreevideo', [FreevideoController::class, "update"]);
-Route::put('books/update', [BookController::class, "update"]);
-Route::put('updateGenre', [GenreController::class, "update"]);
-Route::put('updateAd', [AdController::class, "update"]);
-Route::put('updateMinivideo', [MinivideoController::class, "update"]);
-Route::put('updatePoster', [PosterController::class, "update"]);
+Route::put('teacher/update', [TeacherController::class, "update"]);
+Route::put('course/update', [CourseController::class, "update"]);
+Route::put('video/update', [VideoController::class, "update"]);
+Route::put('audio/update', [AudioController::class, "update"]);
+Route::put('freevideo/update', [FreevideoController::class, "update"]);
+Route::put('book/update', [BookController::class, "update"]);
+Route::put('genre/update', [GenreController::class, "update"]);
+Route::put('ad/update', [AdController::class, "update"]);
+Route::put('minivideo/update', [MinivideoController::class, "update"]);
+Route::put('poster/update', [PosterController::class, "update"]);
 
 Route::delete('users/delete/{email}', [UserController::class, "delete"]);
 Route::delete('books/delete/{id}', [BookController::class, "delete"]);
+Route::delete('posters/delete/{id}', [PosterController::class, "delete"]);
