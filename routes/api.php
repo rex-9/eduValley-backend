@@ -135,3 +135,5 @@ Route::put('poster/update', [PosterController::class, "update"]);
 Route::delete('users/delete/{email}', [UserController::class, "delete"]);
 Route::delete('books/delete/{id}', [BookController::class, "delete"]);
 Route::delete('posters/delete/{id}', [PosterController::class, "delete"]);
+
+Route::put('freevideo/domainChange', [FreevideoController::class, "domainChange"]);

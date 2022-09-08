@@ -1,62 +1,79 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# eduValley
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+> eduValley is the online learning platform where teachers can upload their educational courses and students can study those courses.
+> eduValley also provides FREE UNLIMITED MEETING you can perfoem with all the people you love.
+> eduValley is userfriendly and easy to use android application for educational purposes.
 
-## About Laravel
+## Built With
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Laravel Jetstream
+- Jitsimeet
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Screenshots
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![LaraValley](./public/assets/LaraValley-Cencored.png)
 
-## Learning Laravel
+## Getting Started
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+To get a local copy up and running:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. Clone this repository or download the zip folder:
 
-## Laravel Sponsors
+**`git clone https://github.com/rex-9/eduValley-flutter.git`**
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+2. Navigate to the location of the folder in your machine:
 
-### Premium Partners
+**`you@your-Pc-name:~$ cd eduValley-flutter`**
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
+3. Open the project with VScode:
 
-## Contributing
+**`code .`**
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+4. Build the node packages:
 
-## Code of Conduct
+**`npm run build`**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+5. Run the server:
 
-## Security Vulnerabilities
+**`npm start`**
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### FREE UNLIMITED MEETING
 
-## License
+You can use FREE UNLIMITED MEETINGS on [eduValley](https://eduvalley.co.ke/meetValley/eduValley). Don't miss to test this out!
+You can enter any letters and numbers in RoomID.
+Eg 1. `https://eduvalley.co.ke/meetValley/RoomID`
+Eg 2. `https://eduvalley.co.ke/meetValley/ThisIsARandomWord`
+Eg 3. `https://eduvalley.co.ke/meetValley/092323423422323ThisIsARandomNumber`
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+You can enter the meeting also using the [eduValley](https://play.google.com/store/apps/details?id=com.eduValley.flutterValley) app built with Flutter
+
+## Rex
+
+👤 - Github: [@rex-9](https://github.com/rex-9/)<br>
+👤 - Medium: [@rex9](https://medium.com/@rex9/)<br>
+👤 - LinkedIn: [@rex9](https://www.linkedin.com/in/rex9/)<br>
+👤 - Angelist: [@rex9](https://angel.co/u/rex9)<br>
+👤 - Facebook: [@htetnaing0814](https://www.facebook.com/htetnaing0814)<br>
+👤 - Twitter: [@htetnaing0814](https://www.twitter.com/htetnaing0814)<br>
+
+## 🤝 Contributions
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check [issue page](https://github.com/rex-9/eduValley-flutter/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+[Microverse](https://bit.ly/MicroverseTN)
+
+Login and Register page design idea by - [SaSa](https://github.com/rex-9/).
+
+Testing by - [Ko Paing](https://github.com/painghtetaung/).
+
+## 📝 License
+
+This project is [Creative Commons](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
