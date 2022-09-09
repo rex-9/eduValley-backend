@@ -35,7 +35,7 @@ To get a local copy up and running:
 
 5. Run the server:
 
-**`npm start`**
+**`php artisan serve`**
 
 ### FREE UNLIMITED MEETING
 
@@ -46,6 +46,10 @@ Eg 2. `https://eduvalley.co.ke/meetValley/ThisIsARandomWord`
 Eg 3. `https://eduvalley.co.ke/meetValley/092323423422323ThisIsARandomNumber`
 
 You can enter the meeting also using the [eduValley](https://play.google.com/store/apps/details?id=com.eduValley.flutterValley) app built with Flutter
+
+### The FRONTEND part of eduValley
+
+Check the FRONTEND part of eduValley [here](https://github.com/rex-9/eduValley-flutter).
 
 ## Rex
 
