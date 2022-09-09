@@ -40,9 +40,9 @@ To get a local copy up and running:
 ### FREE UNLIMITED MEETING
 
 You can use FREE UNLIMITED MEETINGS on [eduValley](https://eduvalley.co.ke/meetValley/eduValley). Don't miss to test this out!
-You can enter any letters and numbers in RoomID.
-Eg 1. `https://eduvalley.co.ke/meetValley/RoomID`
-Eg 2. `https://eduvalley.co.ke/meetValley/ThisIsARandomWord`
+You can enter any letters and numbers in RoomID. <br>
+Eg 1. `https://eduvalley.co.ke/meetValley/RoomID` <br>
+Eg 2. `https://eduvalley.co.ke/meetValley/ThisIsARandomWord` <br>
 Eg 3. `https://eduvalley.co.ke/meetValley/092323423422323ThisIsARandomNumber`
 
 You can enter the meeting also using the [eduValley](https://play.google.com/store/apps/details?id=com.eduValley.flutterValley) app built with Flutter
