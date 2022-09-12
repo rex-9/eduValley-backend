@@ -19,11 +19,11 @@ To get a local copy up and running:
 
 1. Clone this repository or download the zip folder:
 
-**`git clone https://github.com/rex-9/eduValley-laravel.git`**
+**`git clone https://github.com/rex-9/eduValley-backend.git`**
 
 2. Navigate to the location of the folder in your machine:
 
-**`you@your-Pc-name:~$ cd eduValley-laravel`**
+**`you@your-Pc-name:~$ cd eduValley-backend`**
 
 3. Open the project with VScode:
 
@@ -49,7 +49,7 @@ You can enter the meeting also using the [eduValley](https://play.google.com/sto
 
 ### The FRONTEND part of eduValley
 
-Check the FRONTEND part of eduValley [here](https://github.com/rex-9/eduValley-flutter).
+Check the FRONTEND part of eduValley [here](https://github.com/rex-9/eduValley-frontend).
 
 ## Rex
 
@@ -64,7 +64,7 @@ Check the FRONTEND part of eduValley [here](https://github.com/rex-9/eduValley-f
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check [issue page](https://github.com/rex-9/eduValley-laravel/issues).
+Feel free to check [issue page](https://github.com/rex-9/eduValley-backend/issues).
 
 ## Show your support
 
