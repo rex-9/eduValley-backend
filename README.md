@@ -29,9 +29,17 @@ To get a local copy up and running:
 
 **`code .`**
 
+4. Install the node packages:
+
+**`npm install`**
+
 4. Build the node packages:
 
-**`npm run build`**
+**`npm run dev`**
+
+4. Migrate the database:
+
+**`php artisan migrate`**
 
 5. Run the server:
 
